@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Daily UI 001 Sign Up Form</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="signupSection">
+  <div class="info">
+    <h2>Mission to Deep Space</h2>
+    <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+    <p>The Future Is Here</p>
+    <br> <br>
+    {{ prediction_text }}
+  </div>
+  <form action="{{ url_for('predict')}}" method="POST" class="signupForm" name="signupform">
+    <h2>Sign Up</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="id"></label>
+        <input type="text" class="inputFields" id="id" name="id" placeholder="ID" value="" required/>
+      </li>
+      <li>
+        <label for="bedrooms"></label>
+        <input type="text" class="inputFields" id="bedrooms" name="bedrooms" placeholder="Bedrooms" value="" required/>
+      </li>
+      <li>
+        <label for="bathrooms"></label>
+        <input type="text" class="inputFields" id="bathrooms" name="bathrooms" placeholder="Bathrooms" value="" required/>
+      </li>
+      <li>
+        <label for="sqft_living"></label>
+        <input type="text" class="inputFields" id="sqft_living" name="sqft_living" placeholder="Square Feet" value="" required/>
+      </li>
+      <li>
+        <label for="sqft_lot"></label>
+        <input type="text" class="inputFields" id="sqft_lot" name="sqft_lot" placeholder="Square Feet Top" value="" required/>
+      </li>
+      <li>
+        <label for="floors"></label>
+        <input type="text" class="inputFields" id="floors" name="floors" placeholder="Floors" value="" required/>
+      </li>
+      <li>
+        <label for="waterfront"></label>
+        <input type="text" class="inputFields" id="waterfront" name="waterfront" placeholder="Water Front" value="" required/>
+      </li>
+      <li>
+        <label for="view"></label>
+        <input type="text" class="inputFields" id="view" name="view" placeholder="Views" value="" required/>
+      </li>
+      <li>
+        <label for="condition"></label>
+        <input type="text" class="inputFields" id="condition" name="condition" placeholder="Condition" value="" required/>
+      </li>
+      <li>
+        <label for="grade"></label>
+        <input type="text" class="inputFields" id="grade" name="grade" placeholder="Grade" value="" required/>
+      </li>
+      <li>
+        <label for="sqft_above"></label>
+        <input type="text" class="inputFields" id="sqft_above" name="sqft_above" placeholder="Square Feet Above" value="" required/>
+      </li>
+      <li>
+        <label for="sqft_basement"></label>
+        <input type="text" class="inputFields" id="sqft_basement" name="sqft_basement" placeholder="Square Feet Basement" value="" required/>
+      </li>
+      <li>
+        <label for="yr_built"></label>
+        <input type="text" class="inputFields" id="ye_built" name="yr_built" placeholder="Year Built" value="" required/>
+      </li>
+      <li>
+        <label for="yr_renovated"></label>
+        <input type="text" class="inputFields" id="yr_renovated" name="ye_renovated" placeholder="Yearr Renovated" value="" required/>
+      </li>
+      <li>
+        <label for="zipcode"></label>
+        <input type="text" class="inputFields" id="zipcode" name="zipcode" placeholder="Zipcode" value="" required/>
+      </li>
+      <li>
+        <!--<label for="lat"></label>
+        <input type="text" class="inputFields" id="lat" name="lat" placeholder="Lat" value="" required/>
+      </li>
+      <li>
+        <label for="long"></label>
+        <input type="text" class="inputFields" id="long" name="long" placeholder="Long" value="" required/>
+      </li>
+      <li>-->
+        <label for="sqft_living15"></label>
+        <input type="text" class="inputFields" id="sqft_living15" name="sqft_living15" placeholder="Square Feet Living 15" value="" required/>
+      </li>
+      <li>
+        <label for="sqft_lot15"></label>
+        <input type="text" class="inputFields" id="sqft_lot15" name="sqft_lot15" placeholder="Square Feet Lot 15" value="" required/>
+      </li>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      
+    </ul>
+  </form>
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
